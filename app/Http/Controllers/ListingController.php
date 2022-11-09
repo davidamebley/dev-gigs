@@ -34,6 +34,12 @@ class ListingController extends Controller
         ]);
     }
 
+    // Show Create a Listing Form
+    public function create()
+    {
+        return view('listings.create');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
