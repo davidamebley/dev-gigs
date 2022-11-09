@@ -14,19 +14,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// All Listings
 Route::get('/', function () {
 
-    // dd(Listing::all());
     return view('listings', [
         'heading' => 'Latest Listings',
         'listings' => Listing::all()
     ]);
 });
 
-Route::get('/listings/{id}', function ($id) {
+// Get Single Listing
+Route::get('/listings/{listing}', function (Listing $listing) {
 
-    // dd(Listing::all());
     return view('listing', [
-        'listing' => Listing::find($id)
+        'listing' => $listing
     ]);
 });
