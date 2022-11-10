@@ -59,6 +59,12 @@ class ListingController extends Controller
             'description' => 'required'
         ]);
 
+        // Add Logo Image File
+        if ($request->hasFile('logo')) {
+            // store logo inside the logos subfolder of the storage/app/public folder
+            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+        }
+
         Listing::create($formFields);
 
         return redirect('/')->with('message', 'Listing created successfully.');
