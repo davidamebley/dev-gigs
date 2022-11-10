@@ -72,8 +72,9 @@ class ListingController extends Controller
 
 
     // Show Edit Listing Form
-    public function edit()
+    public function edit(Listing $listing)
     {
+        return view('listings.edit', ['listing' => $listing]);
     }
 
     /**
@@ -83,8 +84,29 @@ class ListingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Listing $listing)
     {
+        $formFields = $request->validate([
+            'title' => 'required',
+            'company' => 'required',
+            'location' => 'required',
+            'website' => 'required',
+            'email' => ['required', 'email'],
+            'tags' => 'required',
+            'description' => 'required'
+        ]);
+
+        // Add Logo Image File
+        if ($request->hasFile('logo')) {
+            // store logo inside the logos subfolder of the storage/app/public folder
+            $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+        }
+
+        $listing->update($formFields);
+
+        // dd($listing->id);
+
+        return redirect('/listings/' . $listing->id)->with('message', 'Listing updated successfully.');
     }
 
     /**
