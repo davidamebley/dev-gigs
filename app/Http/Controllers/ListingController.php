@@ -70,6 +70,12 @@ class ListingController extends Controller
         return redirect('/')->with('message', 'Listing created successfully.');
     }
 
+
+    // Show Edit Listing Form
+    public function edit()
+    {
+    }
+
     /**
      * Update the specified resource in storage.
      *
