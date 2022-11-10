@@ -9,6 +9,16 @@ class Listing extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title',
+        'company',
+        'location',
+        'website',
+        'email',
+        'description',
+        'tags'
+    ];
+
     // Using one of Laravel's Eloquent Functions
     public function scopeFilter($query, array $filter)
     {
@@ -19,6 +29,8 @@ class Listing extends Model
         if ($filter['search'] ?? false) {    //If this does not return false, then..
             $query->where('title', 'like', '%' . request('search') . '%')
                 ->orWhere('description', 'like', '%' . request('search') . '%')
+                ->orWhere('company', 'like', '%' . request('search') . '%')
+                ->orWhere('location', 'like', '%' . request('search') . '%')
                 ->orwhere('tags', 'like', '%' . request('search') . '%');
         }
     }

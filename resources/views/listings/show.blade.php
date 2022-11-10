@@ -25,7 +25,7 @@
                             ><i class="fa-solid fa-envelope"></i>
                             Contact Employer</a>
 
-                        <a href="{{ $listing->website }}" target="_blank" class="block     bg-black text-white py-2 rounded-xl hover:opacity-80">
+                        <a href="{{ $listing->website }}" target="_blank" class="block bg-black text-white py-2 rounded-xl hover:opacity-80">
                             <i class="fa-solid fa-globe"></i> 
                                 Visit Website
                         </a>

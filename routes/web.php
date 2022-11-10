@@ -20,8 +20,8 @@ Route::get('/', [ListingController::class, 'index']);
 // Show Create A listing Form
 Route::get('/listings/create', [ListingController::class, 'create']);
 
-// Store a New Listing
-Route::get('/listings/{listing}', [ListingController::class, 'show']);
+// Store a New Listing Data
+Route::post('/listings', [ListingController::class, 'store']);
 
 
 // Get Single Listing
