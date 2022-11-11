@@ -5,7 +5,7 @@
             <p class="mb-4">Login to post gigs</p>
         </header>
 
-        <form action="/users/login" method="POST">
+        <form action="/users/authenticate" method="POST">
             @csrf
             <div class="mb-6">
                 <label for="email" class="inline-block text-lg mb-2">Email</label>
