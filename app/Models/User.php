@@ -23,6 +23,12 @@ class User extends Authenticatable
         'password',
     ];
 
+    // Create an Eloquent Relationship to Listing
+    public function listings()
+    {
+        return $this->hasMany(Listing::class, 'user_id');
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
