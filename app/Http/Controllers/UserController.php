@@ -37,7 +37,7 @@ class UserController extends Controller
         // Login after Create Success
         Auth::login($user);
 
-        return redirect('/')->with('message', 'User created and logged in.');
+        return redirect('/')->with('message', 'User registered and logged in successfully');
     }
 
     /**
