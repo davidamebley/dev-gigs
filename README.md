@@ -3,6 +3,52 @@
 ## Description
 With the demand for more personnel to fill or take up software development jobs, there is the need for a platform where companies can post their software-related job listings for qualified candidates from around the world to discover and apply to. The DEVeloper GIGS platform comes in to connect employers to their future employees.
 
+## App Features
+- Allowing new users to register to access all CRUD functionalities outlined below
+- Automatically signs newly registered users in and allows them to create a listing or job post (gig)
+- Allows authenticated users to manage their posted listing either by:
+    - Editing the posted listing
+    - Deleting the listing
+- Prevents authenticated users from editing other listings of other users
+- Allows all users including guests to search for a listing using parameters such as:
+    - Title of the listing
+    - The Company
+    - THe Description of the job
+    - The Job Location
+
+<hr />
+
+##Images
+
+- UNAUTHENTICATED USERS MAIN SCREEN
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/home_guest.png"/>
+
+- LOGIN
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/login_form.png"/>
+
+- REGISTER
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/register_form.png"/>
+
+- CREATE NEW LISTING/GIG
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/create_gig_form.png"/>
+
+- GIG LISTINGS 
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/gig_listings.png" />
+
+- MANAGE LISTINGS
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/manage_gigs_view.png" />
+
+- EDIT LISTING
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/edit_gig_form.png"/>
+
+<hr/>
+
+## Tech stack:
+- <strong>Language:</strong> PHP
+- <strong>Framework:</strong> Laravel
+- <strong>Styling:</strong> Laravel Tailwind
+- <strong>Database:</strong> PostgreSQL
+
 ## Installation
 - To run this application, first make sure you have [PHP](https://www.php.net/manual/en/install.php), [Laravel](https://laravel.com/docs/9.x/installation), and [Composer](https://getcomposer.org/download/) installed. **Note:** You have to install Composer first, then you can install Laravel.
 
@@ -35,33 +81,6 @@ Use the following command:
     - Running this command starts the application server and runs the app at: http://127.0.0.1:8000
 
 <hr />
-
-- UNAUTHENTICATED USERS MAIN SCREEN
-<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/home_guest.png"/>
-
-- LOGIN
-<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/login_form.png"/>
-
-- REGISTER
-<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/register_form.png"/>
-
-- CREATE NEW LISTING/GIG
-<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/create_gig_form.png"/>
-
-- GIG LISTINGS 
-<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/gig_listings.png" />
-
-- MANAGE LISTINGS
-<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/manage_gigs_view.png" />
-
-- EDIT LISTING
-<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/edit_gig_form.png"/>
-
-### Tech stack:
-- <strong>Language:</strong> PHP
-- <strong>Framework:</strong> Laravel
-- <strong>Styling:</strong> Laravel Tailwind
-- <strong>Database:</strong> PostgreSQL
 
 ## License
 
