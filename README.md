@@ -18,7 +18,7 @@ With the demand for more personnel to fill or take up software development jobs,
 
 <hr />
 
-##Images
+## Images
 
 - UNAUTHENTICATED USERS MAIN SCREEN
 <img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/home_guest.png"/>
