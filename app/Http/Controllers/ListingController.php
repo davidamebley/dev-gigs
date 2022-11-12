@@ -65,7 +65,12 @@ class ListingController extends Controller
             $formFields['logo'] = $request->file('logo')->store('logos', 'public');
         }
 
-        Listing::create($formFields);
+        // Create New Listing with UserID through current User
+        $request->user()->listings()->create($formFields); //Laravel uses this relationship setup to automatically fill in the user_id 
+
+        // The next two lines are an alternative to the line above
+        /* $formFields['user_id'] = auth()->id();
+        Listing::create($formFields); */
 
         return redirect('/')->with('message', 'Listing created successfully.');
     }
