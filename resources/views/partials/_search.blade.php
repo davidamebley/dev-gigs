@@ -9,7 +9,7 @@
             type="text"
             name="search"
             class="h-14 w-full pl-10 pr-20 rounded-lg z-0 focus:shadow focus:outline-none"
-            placeholder="Search Software Developer Gigs..."
+            placeholder="Search Gigs By Title, Description, Company, or Location..."
         />
         <div class="absolute top-2 right-2">
             <button

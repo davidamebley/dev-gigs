@@ -28,11 +28,11 @@ class Listing extends Model
         }
 
         if ($filter['search'] ?? false) {    //If this does not return false, then..
-            $query->where('title', 'like', '%' . request('search') . '%')
-                ->orWhere('description', 'like', '%' . request('search') . '%')
-                ->orWhere('company', 'like', '%' . request('search') . '%')
-                ->orWhere('location', 'like', '%' . request('search') . '%')
-                ->orWhere('tags', 'like', '%' . request('search') . '%');
+            $query->where('title', 'ilike', '%' . request('search') . '%')
+                ->orWhere('description', 'ilike', '%' . request('search') . '%')
+                ->orWhere('company', 'ilike', '%' . request('search') . '%')
+                ->orWhere('location', 'ilike', '%' . request('search') . '%')
+                ->orWhere('tags', 'ilike', '%' . request('search') . '%');
         }
     }
 
