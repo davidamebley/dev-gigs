@@ -1,4 +1,4 @@
-# Let's Post (with Laravel)
+# DEV GIGS (FullStack App with Laravel)
 
 ## Description
 With the demand for more personnel to fill or take up software development jobs, there is the need for a platform where companies can post their software-related job listings for qualified candidates from around the world to discover and apply to. The DEVeloper GIGS platform comes in to connect employers to their future employees.
