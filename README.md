@@ -37,25 +37,25 @@ Use the following command:
 <hr />
 
 - UNAUTHENTICATED USERS MAIN SCREEN
-<img src="https://github.com/davidamebley/dev-gigs/public/images/app_screenshots/home_guest.png"/>
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/home_guest.png"/>
 
 - LOGIN
-<img src="https://github.com/davidamebley/dev-gigs/public/images/app_screenshots/login_form.png"/>
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/login_form.png"/>
 
 - REGISTER
-<img src="https://github.com/davidamebley/dev-gigs/public/images/app_screenshots/register_form.png"/>
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/register_form.png"/>
 
 - CREATE NEW LISTING/GIG
-<img src="https://github.com/davidamebley/dev-gigs/public/images/app_screenshots/create_gig_form.png"/>
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/create_gig_form.png"/>
 
 - GIG LISTINGS 
-<img src="https://github.com/davidamebley/dev-gigs/public/images/app_screenshots/gig_listings.png" />
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/gig_listings.png" />
 
 - MANAGE LISTINGS
-<img src="https://github.com/davidamebley/dev-gigs/public/images/app_screenshots/manage_gigs_view.png" />
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/manage_gigs_view.png" />
 
 - EDIT LISTING
-<img src="https://github.com/davidamebley/dev-gigs/public/images/app_screenshots/edit_gig_form.png"/>
+<img src="https://github.com/davidamebley/dev-gigs/blob/main/public/images/app_screenshots/edit_gig_form.png"/>
 
 ### Tech stack:
 - <strong>Language:</strong> PHP
