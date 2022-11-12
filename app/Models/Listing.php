@@ -32,7 +32,7 @@ class Listing extends Model
                 ->orWhere('description', 'like', '%' . request('search') . '%')
                 ->orWhere('company', 'like', '%' . request('search') . '%')
                 ->orWhere('location', 'like', '%' . request('search') . '%')
-                ->orwhere('tags', 'like', '%' . request('search') . '%');
+                ->orWhere('tags', 'like', '%' . request('search') . '%');
         }
     }
 
